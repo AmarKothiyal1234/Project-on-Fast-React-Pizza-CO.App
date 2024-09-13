@@ -1,0 +1,71 @@
+/* pay.css */
+
+/* Container styles */
+.payment-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  font-family: "Arial", sans-serif;
+}
+
+/* Header styles */
+.payment-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form styles */
+.payment-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card element styles */
+.payment-container .StripeElement {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+/* Button styles */
+.payment-container button {
+  background-color: #ff6363;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.payment-container button:hover {
+  background-color: #ff4747;
+}
+
+.payment-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error message styles */
+.payment-container .error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .payment-container {
+    padding: 20px;
+    margin: 30px auto;
+  }
+}
